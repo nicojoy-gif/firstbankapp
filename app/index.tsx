@@ -18,10 +18,11 @@ export default function TabTwoScreen() {
         <Text style={styles.gridheader}>
             <Text style={styles.italics}>First</Text>Mobile</Text>
       <View style={styles.middleSection}>
-        <GridItem text="Not a FirstBank customer?" iconName="add-circle" />
-        <GridItem text="Create Account" iconName="person-add" />
-        <GridItem text="Help" iconName="help-circle" />
+        <GridItem text="Not a FirstBank customer?" iconName="arrow-right"  heading='OPEN ACCOUNT'/>
+        <GridItem text="Create Account" iconName="arrow-right" heading='OPEN ACCOUNT' />
+        <GridItem text="Help" iconName="arrow-right" heading='OPEN ACCOUNT' />
       </View>
+      <Text style={styles.help}>NEED HELP?</Text>
 </View>
       {/* Bottom section with version text */}
       <View style={styles.bottomSection}>
@@ -76,5 +77,10 @@ const styles = StyleSheet.create({
   },
   italics: {
     fontStyle:'italic'
+  },
+  help: {
+    color:'white',
+    fontSize: 20,
+    paddingVertical: 16
   }
 });
